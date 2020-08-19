@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AudioExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="422a0856c0e58cf6875ebdd0db317fc8.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YNQ-dT-e0F">
+                                <rect key="frame" x="20" y="316" width="374" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="OuZ-YN-MpP"/>
+                                </constraints>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hb3-fy-uTr">
+                                <rect key="frame" x="0.0" y="754" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem width="29" style="plain" systemItem="fixedSpace" id="Ijh-fV-DLG"/>
+                                    <barButtonItem systemItem="rewind" id="wfl-WN-WNf">
+                                        <connections>
+                                            <action selector="rewindButton:" destination="BYZ-38-t0r" id="A0A-T2-Ra8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="aeW-fI-qHu"/>
+                                    <barButtonItem systemItem="pause" id="xbj-pd-dW1">
+                                        <connections>
+                                            <action selector="pauseButton:" destination="BYZ-38-t0r" id="9LE-1r-Tt7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="NcI-lM-EVa"/>
+                                    <barButtonItem systemItem="play" id="jTp-BT-nBw">
+                                        <connections>
+                                            <action selector="playButton:" destination="BYZ-38-t0r" id="Dmw-2H-zEh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Cu2-KD-ngi"/>
+                                    <barButtonItem systemItem="stop" id="fW8-Pe-FFi">
+                                        <connections>
+                                            <action selector="stopAudio:" destination="BYZ-38-t0r" id="NpK-Uf-RFF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="oJI-s8-a9X"/>
+                                    <barButtonItem systemItem="fastForward" id="5pt-48-0x0">
+                                        <connections>
+                                            <action selector="fastforwardButton:" destination="BYZ-38-t0r" id="YpJ-5o-McC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YNQ-dT-e0F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="272" id="Hqk-UN-p92"/>
+                            <constraint firstItem="Hb3-fy-uTr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JaT-Ed-7yc"/>
+                            <constraint firstItem="YNQ-dT-e0F" firstAttribute="centerX" secondItem="Hb3-fy-uTr" secondAttribute="centerX" id="Jjc-U0-CEp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hb3-fy-uTr" secondAttribute="bottom" constant="15" id="jAM-w3-emX"/>
+                            <constraint firstItem="YNQ-dT-e0F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jEq-xI-pQc"/>
+                            <constraint firstItem="YNQ-dT-e0F" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="p4u-XN-Nbe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="95"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="422a0856c0e58cf6875ebdd0db317fc8.jpg" width="750" height="928"/>
+    </resources>
+</document>
